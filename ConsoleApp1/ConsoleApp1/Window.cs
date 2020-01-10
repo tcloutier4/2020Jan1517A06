@@ -96,6 +96,42 @@ namespace ConsoleApp1
         //IF the numeric has additional criteria/limitations, then you can code the property as a fully implemented property
         public int? NumberOfPanes { get; set; }
 
+        //Constructors
+        //a constructor is "a method" that guarantees that the newly created isntance of this class will ALWAYS be created in a known state.
 
+        //constructors are optional, but IF  a class DOES NOT have a constructor, then the system will generate the class instance using the datatype defaults.
+        //this situation of no constructors uses what is referred to as a "System constructor"
+
+        //If you code a constructor, you MUST code anya nd all constructors needed by your class.
+
+        //constructors CAN receive a list of parameters,
+        //two common constructors for classes are the Default and the Greedy constructor
+
+        //Default constructor
+        //this version of the constructor takes NO parameters
+        //this usually similates the system constructor, but we have to code this one if we have coded the greedy one.
+        //you CAN if you wish, assign values to your class data members/properties that are NOT the system default for that data type
+        //NO RETURN DATATYPE
+        //This "method" is called on your behalf when an instance of the class is requested by the outside user.
+        //You CAN NOT call this "method" directly
+        public Window()
+        {
+            //default constructor
+
+            NumberOfPanes = 1;
+            Height = 36.0m; // inches
+        }
+
+        //Greedy constructor
+        //takes in a value for each data member/property in the class
+        //each data member/property is assigned the incoming parameter value
+
+        public Window(decimal width, decimal height, int? numberofpanes, string manufacturer)
+        {
+            Width = width;
+            Height = height;
+            Manufacturer = manufacturer;
+            NumberOfPanes = numberofpanes;
+        }
     }
 }
