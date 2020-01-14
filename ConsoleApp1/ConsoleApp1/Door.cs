@@ -107,5 +107,15 @@ namespace ConsoleApp1
             RightOrLeft = rightorleft;
             Material = material;
         }
+
+        public decimal DoorArea()
+        {
+            return Width * Height;
+        }
+        //Perimeter of a Window
+        public decimal DoorPerimeter()
+        {
+            return 2 * (Width + Height);
+        }
     }
 }

@@ -119,7 +119,7 @@ namespace ConsoleApp1
             //default constructor
 
             NumberOfPanes = 1;
-            Height = 36.0m; // inches
+            Height = 0.9m;
         }
 
         //Greedy constructor
@@ -132,6 +132,20 @@ namespace ConsoleApp1
             Height = height;
             Manufacturer = manufacturer;
             NumberOfPanes = numberofpanes;
+        }
+
+        //Behaviors (method)
+        //Optional
+
+        //Area of a window
+        public decimal WindowArea()
+        {
+            return Width * Height;
+        }
+        //Perimeter of a Window
+        public decimal WindowPerimeter()
+        {
+            return 2 * (Width + Height);
         }
     }
 }
