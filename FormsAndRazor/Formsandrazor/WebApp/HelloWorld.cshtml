@@ -39,24 +39,26 @@ else
 }
 
 <form id="theForm" method="post">
-    <td>
-        <label for="codingname">Enter your name:</label>
-        &nbsp;&nbsp;
-        <input type="text" id="javascriptname" name="codingname" />
-        &nbsp;&nbsp;
-        @*a button using the input tag*@
-        @*<input type="submit" id="PressMe" name="PressMe" value="DisplayText"/>*@
+    <tr>
+        <td>
+            <label for="codingname">Enter your name:</label>
+            &nbsp;&nbsp;
+            <input type="text" id="javascriptname" name="codingname"/>
+            &nbsp;&nbsp;
+            @*a button using the input tag*@
+            @*<input type="submit" id="PressMe" name="PressMe" value="DisplayText"/>*@
 
-        @*a button using the button tag*@
-        <button type="submit" id="PressMe" name="PressMe" value="notbuttontext">Press Me</button>
-    </td>
+            @*a button using the button tag*@
+            <button type="submit" id="PressMe" name="PressMe" value="left">Press Me</button>
+        </td>
 
-    <td>
-        <label for="codingname">Enter your git account:</label>
-        &nbsp;&nbsp;
-        <input type="text" id="rightSide" name="codingname" />
-        &nbsp;&nbsp;
-        <button type="submit" id="PressMe" name="PressMe" value="notbuttontext">Press Me</button>
+        <td>
+            <label for="rightSide">Enter your git account:</label>
+            &nbsp;&nbsp;
+            <input type="text" id="rightSide" name="rightSide"/>
+            &nbsp;&nbsp;
+            <button type="submit" id="PressMe" name="PressMe" value="right">Press Me</button>
 
-    </td>
+        </td>
+    </tr>
 </form>
