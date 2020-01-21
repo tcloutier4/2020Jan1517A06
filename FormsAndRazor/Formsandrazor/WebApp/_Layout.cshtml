@@ -4,6 +4,7 @@
     <title>@Page.Title</title>
     <script src="~/Scripts/jquery-3.4.1.js"></script>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
 
     @RenderSection("head", required: false)
 </head>
@@ -15,6 +16,7 @@
         
         RenderSection is required on each content page unless  the required parameter has been set to false*@
         <div class="jumbotron">
+            @RenderPage("~_Menu.cshtml")
             @RenderSection("banner", required: false)
         </div>
         @*RenderBody is the main default area where your context page will be displayed. The RenderBody reference is physically removed and your content inserted*@
